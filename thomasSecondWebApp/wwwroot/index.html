@@ -1,0 +1,98 @@
+﻿<!--Build an ASP.NET Web App using the same structure as in the "Building First Web App" series of videos. (i.e. Non-MVC)
+
+Include:
+
+Title
+Header that lists your preferred name
+A picture of yourself doing something you enjoy
+A paragraph on what you hope to get out of this IS 413 class
+A list of the Top #3 jobs you are most interested in pursuing when you graduate
+A "Grade Calculator" form that takes as input a percentage of each grade category listed in the syllabus
+An icon for the website (displayed on the tab next to the title) (#notcoveredinthevideos)
+Style the site using a CSS file.  Level of styling is up to you, but only CSS for now.  (No Bootstrap, Angular, etc. on this assignment. We'll get there!)
+
+Build a JavaScript program that calculates and displays both a final percentage and a letter grade using the "Grade Calculator" form entries based on the weights listed in the syllabus.
+
+As always, write good code (use indentation, commenting, whitespace, descriptive variable names, etc.)
+
+Submit a link to the GitHub Repository containing your project. (NOTE:  Make sure the repository is Public so the TAs can access it.)-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Thomas Fife's Website</title>
+    <link rel="icon" type="image/png" href="img/basketball_favicon.png" /> <!--Favicon-->
+    <link href="css/main.css" rel="stylesheet"/> <!--CSS File-->
+</head>
+<body style="background-color:lightgrey;">
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
+    </div>
+    <div class="row">
+        <h1>Thomas Fife</h1>
+    </div>
+    <br />
+    <div class="row">
+        <div class="column">
+            <img class="smaller_img" src="img/basketball.jpg" /> <!--Image-->
+        </div>
+
+        <div class="column">
+            <h2>What I hope to get out of IS 413</h2>
+            <p>This semester, I really want to take the opportunity to not only learn new coding languages, but I want to form my own method of internalizing what I learn. Up to this point in my college career, I haven't perfected my craft in how I study and apply course material. I want to not only learn a bunch of new material, but I want to do so in a way that will most benefit me in the future.
+            </p>
+            <br />
+            <br />
+            <br />
+            <h2>Top 3 jobs I'm most interested in</h2>
+            <ol>
+                <li>Data Analyst</li>
+                <li>Quality Assurance Engineer</li>
+                <li>Software Developer</li>
+            </ol>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <form>
+                <fieldset class="center">
+                    <legend class="center_element">Grade Calculator</legend>
+                    <label>50% - Assignments: </label>
+                    <input id="assignments" placeholder="100" />
+                    <br />
+                    <label>10% - Group Projects: </label>
+                    <input id="groupProjects" placeholder="100" />
+                    <br />
+                    <label>10% - Quizzes: </label>
+                    <input id="quizzes" placeholder="100" />
+                    <br />
+                    <label>20% - Exams: </label>
+                    <input id="exams" placeholder="100" />
+                    <br />
+                    <label>10% - Intex: </label>
+                    <input id="intex" placeholder="100" />
+                    <br />
+                    <br />
+
+                    <!--return false is to make sure that the page doesn't reload and the innerHTML disappears-->
+                    <button type="submit" id="submitButton" onclick="return false">Submit</button>
+
+                    <!--On click to make sure that when it is reset, the text is still there-->
+                    <button type="reset" onclick="document.getElementById('finalScore').innerHTML = 'Final Score: '; document.getElementById('letterGrade').innerHTML = 'Letter Grade: '">Reset</button>
+                    <h3 id="finalScore">Final Score: </h3>
+                    <h3 id="letterGrade">Letter Grade: </h3>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/gradingcalc.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{02E57957-BD76-48E8-A980-C1186BD23ECD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="thomasSecondWebApp/wwwroot/js/gradingcalc.js">
+    <Files>
+      <File FileName="thomasSecondWebApp/Program.cs" Line="14" Column="56" />
+      <File FileName="thomasSecondWebApp/Startup.cs" Line="29" Column="1" />
+      <File FileName="thomasSecondWebApp/index.html" Line="56" Column="1" />
+      <File FileName="thomasSecondWebApp/wwwroot/css/main.css" Line="59" Column="23" />
+      <File FileName="thomasSecondWebApp/wwwroot/js/gradingcalc.js" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="thomasSecondWebApp" expanded="True">
+            <Node name="thomasSecondWebApp" expanded="True">
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True">
+                  <Node name="gradingcalc.js" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.thomasSecondWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
